@@ -1,12 +1,20 @@
-//obtener array de anuncios
-import { adverts } from "./adverts.js";
-import { buildAdvertView } from "./advertView.js";
+import { getAdverts } from "./adverts.js";
+import { buildAdvertView, buildSpinnerView } from "./advertView.js";
 
-export function advertListController(advertListElement) {
-    advertListElement.innerHtml = '';
-
+export async function advertListController(advertListElement) {
+    const spinnerView = buildSpinnerView();
+    advertListElement.appendChild(spinnerView);
+    
+    const adverts = await getAdverts()
+    
     for (const advert of adverts) {
         const newAdvertElement = buildAdvertView(advert);
-        advertListElement.appendChild(newAdvertElement)
+        advertListElement.appendChild(newAdvertElement);
     }
+    
+    spinnerView.remove(); 
 };
+
+
+
+
