@@ -1,5 +1,5 @@
 import { getAdverts } from "./adverts.js";
-import { buildAdvertView, buildSpinnerView, buildErrorLoadingAdverts } from "./advertView.js";
+import { buildAdvertView, buildSpinnerView, buildErrorLoadingAdverts, buildEmptyAdvertList } from "./advertView.js";
 
 export async function advertListController(advertListElement) {
     const spinnerView = buildSpinnerView();
@@ -9,12 +9,13 @@ export async function advertListController(advertListElement) {
     try {
         adverts = await getAdverts();
         spinnerView.remove();
-        for (const advert of adverts) {
-            const newAdvertElement = buildAdvertView(advert);
-            advertListElement.appendChild(newAdvertElement);
+
+        if(adverts.length > 0) {
+          drawAdverts(adverts, advertListElement)
+        } else {
+          showEmptyMessage(advertListElement)
         }
         
-
       } catch (error) {
         const errorView = buildErrorLoadingAdverts();
         advertListElement.appendChild(errorView);
@@ -22,20 +23,17 @@ export async function advertListController(advertListElement) {
         spinnerView.remove();
         return;
       };
-
-      for (const advert of adverts) {
-        const newAdvertElement = buildAdvertView(advert);
-        advertListElement.appendChild(newAdvertElement);
-    }
-
-      
-    
-    
-    
-    
-    //spinnerView.remove(); 
 };
 
+function drawAdverts(adverts, advertListElement) {
+  for (const advert of adverts) {
+    const newAdvertElement = buildAdvertView(advert);
+    advertListElement.appendChild(newAdvertElement);
+}
+}
 
-
+function showEmptyMessage(advertListElement) {
+  const emptyView = buildEmptyAdvertList();
+  advertListElement.appendChild(emptyView);
+}
 
