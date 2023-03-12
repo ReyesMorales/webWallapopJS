@@ -19,3 +19,10 @@ export function buildSpinnerView() {
     spinnerDiv.classList.add('spinner');
     return spinnerDiv;
   };
+
+  export function buildErrorLoadingAdverts() {
+    const errorElement = document.createElement('p');
+    errorElement.classList.add('load-error');
+    errorElement.textContent = 'No se pueden cargar los anuncios en este momento. Pruebe de nuevo más tarde';
+    return errorElement;
+  };

@@ -1,11 +1,21 @@
 import { getAdverts } from "./adverts.js";
-import { buildAdvertView, buildSpinnerView } from "./advertView.js";
+import { buildAdvertView, buildSpinnerView, buildErrorLoadingAdverts } from "./advertView.js";
 
 export async function advertListController(advertListElement) {
     const spinnerView = buildSpinnerView();
     advertListElement.appendChild(spinnerView);
+    let adverts = [];
+
+    try {
+        adverts = await getAdverts();
+      } catch (error) {
+        const errorView = buildErrorLoadingAdverts();
+        advertListElement.appendChild(errorView);
+        console.log('Error:', error);
+        spinnerView.remove(); 
+        return;
+      }
     
-    const adverts = await getAdverts()
     
     for (const advert of adverts) {
         const newAdvertElement = buildAdvertView(advert);
