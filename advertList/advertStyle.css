@@ -1,17 +1,17 @@
-.tweet {
+.advert {
     border: solid 1px lightgray;
     border-radius: 10px;
     margin-bottom: 1rem;
     padding: 0.5rem;
   }
   
-  .tweet .user-info {
+  .advert .user-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .tweet img {
+  .advert img {
     width: 50px;
     height: 50px;
   }
