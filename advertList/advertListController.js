@@ -8,8 +8,7 @@ export async function advertListController(advertListElement) {
 
     try {
         adverts = await getAdverts();
-        spinnerView.remove();
-
+      
         if(adverts.length > 0) {
           drawAdverts(adverts, advertListElement)
         } else {
@@ -20,8 +19,9 @@ export async function advertListController(advertListElement) {
         const errorView = buildErrorLoadingAdverts();
         advertListElement.appendChild(errorView);
         console.log('Error:', error);
-        spinnerView.remove();
         return;
+      } finally {
+        spinnerView.remove();
       };
 };
 
