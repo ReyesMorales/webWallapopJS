@@ -3,13 +3,7 @@
     border-radius: 10px;
     margin-bottom: 1rem;
     padding: 0.5rem;
-  }
-  
-  .advert .user-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+}
   
   .advert img {
     width: 50px;

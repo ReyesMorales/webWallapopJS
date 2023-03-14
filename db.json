@@ -1,0 +1,205 @@
+  [
+    {
+        "nombre": "iPhone 11 Pro",
+        "descripcion": "iPhone 11 Pro en excelente estado, color gris espacial, 256 GB.",
+        "tipo": "venta",
+        "precio": 800,
+        "imagen": "https://example.com/iphone11pro.jpg"
+    },
+    {
+        "nombre": "Silla de oficina",
+        "descripcion": "Silla de oficina ergonómica con soporte lumbar, en buen estado.",
+        "tipo": "venta",
+        "precio": 60,
+        "imagen": "https://example.com/sillaoficina.jpg"
+    },
+    {
+        "nombre": "Cámara Canon EOS Rebel T7",
+        "descripcion": "Cámara Canon EOS Rebel T7 en perfectas condiciones, incluye lente y cargador.",
+        "tipo": "venta",
+        "precio": 400,
+        "imagen": "https://example.com/canonrebelt7.jpg"
+    },
+    {
+        "nombre": "Mesa de centro de madera",
+        "descripcion": "Mesa de centro de madera en buen estado, con cajones para almacenamiento.",
+        "tipo": "venta",
+        "precio": 100,
+        "imagen": "https://example.com/mesacentro.jpg"
+    },
+    {
+        "nombre": "Nintendo Switch",
+        "descripcion": "Consola Nintendo Switch en excelentes condiciones, incluye dos controles y cargador.",
+        "tipo": "venta",
+        "precio": 300,
+        "imagen": "https://example.com/nintendoswitch.jpg"
+    },
+    {
+        "nombre": "Bicicleta de montaña",
+        "descripcion": "Bicicleta de montaña en buen estado, talla L, incluye accesorios de seguridad.",
+        "tipo": "venta",
+        "precio": 200,
+        "imagen": "https://example.com/bicimontana.jpg"
+    },
+    {
+        "nombre": "Mesa de ping-pong",
+        "descripcion": "Mesa de ping-pong en buen estado, con red.",
+        "tipo": "compra",
+        "precio": 150
+    },
+    {
+        "nombre": "Sofá de cuero",
+        "descripcion": "Sofá de cuero en buenas condiciones, color negro, con capacidad para tres personas.",
+        "tipo": "venta",
+        "precio": 350,
+        "imagen": "https://example.com/sofacuero.jpg"
+    },
+    {
+        "nombre": "Xbox One X",
+        "descripcion": "Consola Xbox One X en excelente estado, incluye dos controles y cargador.",
+        "tipo": "venta",
+        "precio": 350,
+        "imagen": "https://example.com/xboxonex.jpg"
+    },
+    {
+        "nombre": "Mueble de TV",
+        "descripcion": "Mueble de TV en buen estado, con espacio para almacenamiento y ruedas para movilidad.",
+        "tipo": "venta",
+        "precio": 80,
+        "imagen": "https://example.com/muebletv.jpg"
+    },
+    {
+        "nombre": "Portátil Lenovo",
+        "descripcion": "Portátil Lenovo en excelentes condiciones, procesador Intel Core i5, 8 GB de RAM y disco duro de 1 TB.","tipo": "venta",
+        "precio": 500,
+        "imagen": "https://example.com/portatillenovo.jpg"
+    },        
+        {
+        "nombre": "Mesa de comedor",
+        "descripcion": "Mesa de comedor en buen estado, con capacidad para seis personas.",
+        "tipo": "venta",
+        "precio": 120,
+        "imagen": "https://example.com/mesacomedor.jpg"
+    },        
+        {
+        "nombre": "Cama matrimonial",
+        "descripcion": "Cama matrimonial en buen estado, con base y colchón incluidos.",
+        "tipo": "venta",
+        "precio": 200,
+        "imagen": "https://example.com/camamatrimonial.jpg"
+    },        
+        {
+        "nombre": "Altavoces Bose",
+        "descripcion": "Altavoces Bose en excelentes condiciones, sonido de alta calidad.",
+        "tipo": "venta",
+        "precio": 250,
+        "imagen": "https://example.com/altavocesbose.jpg"
+    },        
+        {
+        "nombre": "Televisor Samsung",
+        "descripcion": "Televisor Samsung en buen estado, pantalla de 42 pulgadas y control remoto incluido.",
+        "tipo": "venta",
+        "precio": 300,
+        "imagen": "https://example.com/televisorsamsung.jpg"
+    },        
+        {
+        "nombre": "Máquina de coser Singer",
+        "descripcion": "Máquina de coser Singer en buen estado, incluye accesorios y manual de usuario.",
+        "tipo": "venta",
+        "precio": 150,
+        "imagen": "https://example.com/maquinacoser.jpg"
+    },        
+        {
+        "nombre": "Escritorio de madera",
+        "descripcion": "Escritorio de madera en buen estado, con cajones y espacio para almacenamiento.",
+        "tipo": "venta",
+        "precio": 80,
+        "imagen": "https://example.com/escritoriomadera.jpg"
+    },        
+        {
+        "nombre": "Aspiradora Dyson",
+        "descripcion": "Aspiradora Dyson en excelentes condiciones, con varios accesorios incluidos.",
+        "tipo": "venta",
+        "precio": 200,
+        "imagen": "https://example.com/aspiradoradyson.jpg"
+    },        
+        {
+        "nombre": "Impresora HP",
+        "descripcion": "Impresora HP en buen estado, con conexión WiFi y cartuchos de tinta incluidos.",
+        "tipo": "venta",
+        "precio": 50,
+        "imagen": "https://example.com/impresorahp.jpg"
+    },        
+        {
+        "nombre": "Guitarra eléctrica",
+        "descripcion": "Guitarra eléctrica en buenas condiciones, con amplificador y funda incluidos.",
+        "tipo": "compra",
+        "precio": 250
+    },        
+        {
+        "nombre": "Mochila de viaje",
+        "descripcion": "Mochila de viaje en buen estado, con múltiples compartimentos y capacidad de 50 litros.",
+        "tipo": "venta",
+        "precio": 60,
+        "imagen": "https://example.com/mochilaviaje.jpg"
+    },        
+        {
+        "nombre": "Cámara GoPro HERO8",
+        "descripcion": "Cámara GoPro HERO8 en excelentes condiciones, incluye batería, tarjeta de memoria y varios accesorios.","tipo": "venta",
+        "precio": 300,
+        "imagen": "https://example.com/goprohero8.jpg"
+    },
+{
+        "nombre": "Máquina de cortar pelo",
+        "descripcion": "Máquina de cortar pelo en buen estado, con varios peines y accesorios incluidos.",
+        "tipo": "venta",
+        "precio": 30,
+        "imagen": "https://example.com/maquinacortarpelo.jpg"
+    },
+{
+        "nombre": "Bicicleta de montaña",
+        "descripcion": "Bicicleta de montaña en buen estado, con cuadro de aluminio y suspensión delantera.",
+        "tipo": "venta",
+        "precio": 400,
+        "imagen": "https://example.com/bicimontana.jpg"
+    },
+{
+        "nombre": "Consola Xbox One",
+        "descripcion": "Consola Xbox One en buen estado, incluye dos controles y varios juegos.",
+        "tipo": "venta",
+        "precio": 200,
+        "imagen": "https://example.com/xboxone.jpg"
+    },
+{
+        "nombre": "Libros de cocina",
+        "descripcion": "Colección de libros de cocina en buen estado, con recetas de todo el mundo.",
+        "tipo": "venta",
+        "precio": 50,
+        "imagen": "https://example.com/libroscocina.jpg"
+    },
+{
+        "nombre": "Reloj Casio",
+        "descripcion": "Reloj Casio en buen estado, resistente al agua y con múltiples funciones.",
+        "tipo": "compra",
+        "precio": 30
+    },
+{
+        "nombre": "Gafas de sol Ray-Ban",
+        "descripcion": "Gafas de sol Ray-Ban en excelentes condiciones, con lentes polarizados y estuche incluido.",
+        "tipo": "venta",
+        "precio": 80,
+        "imagen": "https://example.com/gafasrayban.jpg"
+    },
+{
+        "nombre": "Teclado Yamaha",
+        "descripcion": "Teclado Yamaha en buen estado, con varios sonidos y efectos incluidos.",
+        "tipo": "compra",
+        "precio": 150
+    },
+{
+        "nombre": "Horno de microondas",
+        "descripcion": "Horno de microondas en buen estado, con varios programas y funciones incluidas.",
+        "tipo": "compra",
+        "precio": 50
+    }
+]
