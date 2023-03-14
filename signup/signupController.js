@@ -14,6 +14,7 @@ export function signupController(signupElement) {
             try {
                 await createUser(emailElement.value, passwordElement.value)
                 alert('Usuario creado correctamente')
+                window.location = '/';
             } catch (error) {
                 alert(error.message)
             }
