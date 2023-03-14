@@ -9,13 +9,6 @@ export function buildAdvertView(advert) {
     <p>${advert.imagen}</p>
     `; 
     
-    // `<p>${advert.pseudo}</p>
-    // <img src="${advert.avatar}" />
-    // <div class="user-info">
-    // <span>${advert.handle}</span>
-    // </div>
-    // <p>${advert.content} 
-    // `;
 
     return newAdvertElement;
 }
