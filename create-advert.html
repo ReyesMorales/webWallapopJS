@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/create-advert.css">
+    <title>New Advert</title>
+</head>
+
+<body>
+    <h1>Añade tu anuncio</h1>
+
+    <form id="createAdvertForm">
+        <div>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        </div>
+      
+        <div>
+          <textarea name="descripcion" id="descripcion" cols="30" rows="10" required placeholder="Descripcion"></textarea>
+        </div>
+      
+        <div>
+          <select name="tipo" id="tipo">
+            <option value="compra">Compra</option>
+            <option value="venta">Venta</option>
+          </select>
+        </div>
+      
+        <div>
+          <input type="text" name="precio" id="precio" placeholder="Precio">
+        </div>
+      
+        <div>
+          <input type="text" name="imagen" id="imagen" placeholder="Imagen">
+        </div>
+      
+        <button type="submit">Crear advert</button>
+      </form>
+      
+      
+      
+     
+
+    <script type="module" src="./create-advert/index.js"></script>
+</body>
+
+</html>
