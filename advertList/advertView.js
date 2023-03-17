@@ -1,12 +1,14 @@
 export function buildAdvertView(advert) {
     const newAdvertElement = document.createElement('article');
     newAdvertElement.classList.add('advert')
-    newAdvertElement.innerHTML = 
-    `<p>${advert.nombre}</p>
+    newAdvertElement.innerHTML = `
+    <a href="/advert-detail.html?advertId=${advert.id}">
+    <p>${advert.nombre}</p>
     <p>${advert.descripcion}</p>
     <p>${advert.tipo}</p>
     <p>${advert.precio}</p>
     <p>${advert.imagen}</p>
+    </a>
     `; 
     
 
