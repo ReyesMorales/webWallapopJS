@@ -1,6 +1,6 @@
-import { isEmailValid } from '../utils/isEmailValid.js';
-import { loginUser } from './login.js';
-import { pubSub } from '../pubSub.js';
+import { isEmailValid } from "../utils/isEmailValid.js";
+import { loginUser } from "./login.js";
+import { pubSub } from "../pubSub.js";
 
 export function loginController(loginElement){
 
@@ -22,8 +22,9 @@ export function loginController(loginElement){
     const password = formData.get('password')
     
     try {
-      const jwt = await loginUser(username, password)
-      localStorage.setItem('token', jwt)
+      const { accessToken, userId } = await loginUser(username, password)
+      localStorage.setItem('token', accessToken);
+      localStorage.setItem('userId', userId);
       window.location = '/';
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.SHOW_NOTIFICATION, error.message)
