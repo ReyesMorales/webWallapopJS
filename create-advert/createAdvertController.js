@@ -1,4 +1,5 @@
 import { createAdvert } from "./createAdvert.js";
+import { pubSub } from "../pubSub.js";
 
 export const createAdvertController = async (createAdvertFormElement) => {
   createAdvertFormElement.addEventListener('submit', async (event) => {
@@ -13,11 +14,16 @@ export const createAdvertController = async (createAdvertFormElement) => {
         advertImage: formData.get('imagen')
       };
 
+      const topic = pubSub.TOPICS.SHOW_NOTIFICATION;
+
+
     try {
       await createAdvert(values)
+      pubSub.publish(topic, 'El anuncio se ha creado correctamente');
       window.location = '/'
     } catch (error) {
-      alert(error)
+      pubSub.publish(topic, 'Ha ocurrido un error al crear el anuncio');
+
     }
   })
 }
