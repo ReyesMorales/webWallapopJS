@@ -1,6 +1,8 @@
 export function buildAdvertView(advert) {
     const newAdvertElement = document.createElement('article');
     newAdvertElement.classList.add('advert')
+    
+    if(advert.tipo === "venta") {
     newAdvertElement.innerHTML = `
     <a href="/advert-detail.html?advertId=${advert.id}">
     <p>${advert.nombre}</p>
@@ -9,7 +11,16 @@ export function buildAdvertView(advert) {
     <p>${advert.precio}</p>
     <p>${advert.imagen}</p>
     </a>
-    `; 
+    `; } else {
+      newAdvertElement.innerHTML = `
+    <a href="/advert-detail.html?advertId=${advert.id}">
+    <p>${advert.nombre}</p>
+    <p>${advert.descripcion}</p>
+    <p>${advert.tipo}</p>
+    <p>${advert.precio}</p>
+    </a>
+    `;
+    }
     
 
     return newAdvertElement;
