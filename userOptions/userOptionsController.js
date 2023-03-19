@@ -1,5 +1,5 @@
 import { decodeToken } from "../utils/decodeToken.js";
-import { buildGreeting } from './userOptionsView.js'
+import { buildGreeting } from "./userOptionsView.js";
 
 export function userOptionsController(userOptionsElement) {
   const token = localStorage.getItem('token')

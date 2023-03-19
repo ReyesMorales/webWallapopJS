@@ -3,7 +3,6 @@ export async function loginUser(email, password) {
       username: email,
       password: password
     }
-  
     const response = await fetch('http://localhost:8000/auth/login', {
       method: 'POST',
       body: JSON.stringify(user),
@@ -16,7 +15,8 @@ export async function loginUser(email, password) {
       throw new Error('Error al identificar el usuario')
     }
 
-    const data = await response.json()
+    const data = await response.json();
 
-    return data.accessToken;
+    return data;
 }
+
