@@ -1,6 +1,9 @@
+import { notificationController } from '../notifications/notificationController.js';
 import { createAdvertController } from "./createAdvertController.js";
 
-createAdvertController
+const notificationsElement = document.querySelector('.notifications');
+
+notificationController(notificationsElement);
 
 const token = localStorage.getItem('token')
 
