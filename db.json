@@ -1,205 +1,347 @@
-  [
-    {
-        "nombre": "iPhone 11 Pro",
-        "descripcion": "iPhone 11 Pro en excelente estado, color gris espacial, 256 GB.",
-        "tipo": "venta",
-        "precio": 800,
-        "imagen": "https://example.com/iphone11pro.jpg"
-    },
-    {
+{
+    "users": [
+      {
+        "username": "usuario1@wallapop.pop",
+        "password": "$2b$10$OLcILraMu2p.y5zWYxvBbOBBnlG8bk/Bz0eE7S8/uIzlEFYH8vvj2",
+        "id": 1
+      },
+      {
+        "username": "usuario2@wallapop.pop",
+        "password": "$2b$10$OLcILraMu2p.y5zWYxvBbONkJlV35tCGbUPknNtFyDFeVUY.SyKhS",
+        "id": 2
+      },
+      {
+        "username": "usuario3@wallapop.pop",
+        "password": "$2b$10$OLcILraMu2p.y5zWYxvBbOXxil8J0P/BffLvLE85fCzyAaxg2wFQK",
+        "id": 3
+      },
+      {
+        "username": "usuario4@wallapop.pop",
+        "password": "$2b$10$OLcILraMu2p.y5zWYxvBbO8YooQefAqstJdMUy/ZyZFdjhSGvv5LK",
+        "id": 4
+      },
+      {
+        "username": "usuario5@wallapop.pop",
+        "password": "$2b$10$KQ8FZlDNHfP8A8KXE07Zs.3W7uclEjqTXOgq0qtck3zOREHEVexjO",
+        "id": 5
+      },
+      {
+        "username": "usuario6@wallapop.pop",
+        "password": "$2b$10$SN2Gm5bmJjz4tZIfiA7SleWuJI15rhEAaTTcSN4DMFgzYY8Rrn78O",
+        "id": 6
+      },
+      {
+        "username": "usuario7@wallapop.pop",
+        "password": "$2b$10$SN2Gm5bmJjz4tZIfiA7Sle/mnihK1VXLNIid7kbR7TDo/wb4v7iYK",
+        "id": 7
+      },
+      {
+        "username": "usuario8@wallapop.pop",
+        "password": "$2b$10$SN2Gm5bmJjz4tZIfiA7Sley3od/ySYaqjlF4OS1Jf50I4YZgcqtmG",
+        "id": 8
+      }
+    ],
+    "adverts": [
+      {
         "nombre": "Silla de oficina",
         "descripcion": "Silla de oficina ergonómica con soporte lumbar, en buen estado.",
         "tipo": "venta",
         "precio": 60,
-        "imagen": "https://example.com/sillaoficina.jpg"
-    },
-    {
+        "imagen": "https://www.mobiliariojmd.com/wp-content/uploads/2023/01/silla-oficina-ruedas-segunda-mano-barcelona.jpg",
+        "userId": 2,
+        "updateAt": "2023-03-19T12:00:00Z",
+        "id": 2
+      },
+      {
         "nombre": "Cámara Canon EOS Rebel T7",
         "descripcion": "Cámara Canon EOS Rebel T7 en perfectas condiciones, incluye lente y cargador.",
         "tipo": "venta",
         "precio": 400,
-        "imagen": "https://example.com/canonrebelt7.jpg"
-    },
-    {
+        "imagen": "https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/84d234bb-ba28-43ce-9b92-5e6ab73ff156?rule=hw396_70",
+        "userId": 3,
+        "updateAt": "2023-03-19T12:00:00Z",
+        "id": 3
+      },
+      {
         "nombre": "Mesa de centro de madera",
         "descripcion": "Mesa de centro de madera en buen estado, con cajones para almacenamiento.",
         "tipo": "venta",
         "precio": 100,
-        "imagen": "https://example.com/mesacentro.jpg"
-    },
-    {
+        "imagen": "https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/9cf9963d-c3d3-4dd3-9bd7-1c367d042218?rule=hw396_70",
+        "userId": 4,
+        "updateAt": "2023-03-19T12:00:00Z",
+        "id": 4
+      },
+      {
         "nombre": "Nintendo Switch",
         "descripcion": "Consola Nintendo Switch en excelentes condiciones, incluye dos controles y cargador.",
         "tipo": "venta",
         "precio": 300,
-        "imagen": "https://example.com/nintendoswitch.jpg"
-    },
-    {
+        "imagen": "https://www.gamers.red/ow_userfiles/plugins/iclassifieds/full_s2j1l1s3kud38ilobiv181bupyxidol2.jpg",
+        "userId": 5,
+        "updateAt": "2023-03-19T12:00:00Z",
+        "id": 5
+      },
+      {
         "nombre": "Bicicleta de montaña",
         "descripcion": "Bicicleta de montaña en buen estado, talla L, incluye accesorios de seguridad.",
         "tipo": "venta",
         "precio": 200,
-        "imagen": "https://example.com/bicimontana.jpg"
-    },
-    {
+        "imagen": "https://res.cloudinary.com/portalbici/advertisements/180/avhlthrqjjo8ty4optvq.jpg",
+        "userId": 1,
+        "updatedAt": "2023-03-19T12:10:00Z",
+        "id": 6
+      },
+      {
         "nombre": "Mesa de ping-pong",
         "descripcion": "Mesa de ping-pong en buen estado, con red.",
         "tipo": "compra",
-        "precio": 150
-    },
-    {
-        "nombre": "Sofá de cuero",
-        "descripcion": "Sofá de cuero en buenas condiciones, color negro, con capacidad para tres personas.",
-        "tipo": "venta",
+        "precio": 150,
+        "userId": 2,
+        "updatedAt": "2023-03-19T12:15:00Z",
+        "id": 7
+      },
+      {
+        "nombre": "Sofá",
+        "descripcion": "Sofá en buenas condiciones, color negro, con capacidad para tres personas.",
+        "tipo": "compra",
         "precio": 350,
-        "imagen": "https://example.com/sofacuero.jpg"
-    },
-    {
+        "userId": 1,
+        "updatedAt": "2023-03-19T12:20:00Z",
+        "id": 8
+      },
+      {
         "nombre": "Xbox One X",
         "descripcion": "Consola Xbox One X en excelente estado, incluye dos controles y cargador.",
         "tipo": "venta",
         "precio": 350,
-        "imagen": "https://example.com/xboxonex.jpg"
-    },
-    {
+        "imagen": "https://i.ebayimg.com/images/g/L5IAAOSwfC5iBu-Y/s-l500.jpg",
+        "userId": 2,
+        "updatedAt": "2023-03-19T12:25:00Z",
+        "id": 9
+      },
+      {
         "nombre": "Mueble de TV",
         "descripcion": "Mueble de TV en buen estado, con espacio para almacenamiento y ruedas para movilidad.",
         "tipo": "venta",
         "precio": 80,
-        "imagen": "https://example.com/muebletv.jpg"
-    },
-    {
+        "imagen": "https://www.mueblesalcoste.es/fotos/vendedores/1116572-85788-img-20201130-wa0001.jpg",
+        "userId": 3,
+        "updatedAt": "2022-03-19T13:25:00Z",
+        "id": 10
+      },
+      {
         "nombre": "Portátil Lenovo",
-        "descripcion": "Portátil Lenovo en excelentes condiciones, procesador Intel Core i5, 8 GB de RAM y disco duro de 1 TB.","tipo": "venta",
+        "descripcion": "Portátil Lenovo en excelentes condiciones, procesador Intel Core i5, 8 GB de RAM y disco duro de 1 TB.",
+        "tipo": "venta",
         "precio": 500,
-        "imagen": "https://example.com/portatillenovo.jpg"
-    },        
-        {
+        "imagen": "https://i.ebayimg.com/images/g/rscAAOSwiN1jNAjv/s-l500.jpg",
+        "userId": 8,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 11
+      },
+      {
         "nombre": "Mesa de comedor",
         "descripcion": "Mesa de comedor en buen estado, con capacidad para seis personas.",
         "tipo": "venta",
         "precio": 120,
-        "imagen": "https://example.com/mesacomedor.jpg"
-    },        
-        {
+        "imagen": "https://www.ikea.com/es/es/images/products/ekedalen-mesa-extensible-blanco__0744806_pe743415_s5.jpg",
+        "userId": 1,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 12
+      },
+      {
         "nombre": "Cama matrimonial",
         "descripcion": "Cama matrimonial en buen estado, con base y colchón incluidos.",
         "tipo": "venta",
         "precio": 200,
-        "imagen": "https://example.com/camamatrimonial.jpg"
-    },        
-        {
+        "imagen": "https://bambambini.es/1930-large_default/cama-de-matrimonio-kabul.jpg",
+        "userId": 2,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 13
+      },
+      {
         "nombre": "Altavoces Bose",
         "descripcion": "Altavoces Bose en excelentes condiciones, sonido de alta calidad.",
-        "tipo": "venta",
+        "tipo": "compra",
         "precio": 250,
-        "imagen": "https://example.com/altavocesbose.jpg"
-    },        
-        {
-        "nombre": "Televisor Samsung",
-        "descripcion": "Televisor Samsung en buen estado, pantalla de 42 pulgadas y control remoto incluido.",
+        "userId": 4,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 14
+      },
+      {
+        "nombre": "Television",
+        "descripcion": "Television en buen estado, pantalla de 42 pulgadas y control remoto incluido.",
         "tipo": "venta",
         "precio": 300,
-        "imagen": "https://example.com/televisorsamsung.jpg"
-    },        
-        {
+        "imagen": "https://www.lg.com/ar/images/televisores/42lb5800/gallery/LB5800-750x480.jpg",
+        "userId": 7,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 15
+      },
+      {
         "nombre": "Máquina de coser Singer",
         "descripcion": "Máquina de coser Singer en buen estado, incluye accesorios y manual de usuario.",
         "tipo": "venta",
         "precio": 150,
-        "imagen": "https://example.com/maquinacoser.jpg"
-    },        
-        {
+        "imagen": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71kZdl1MoGL._AC_SX466_.jpg",
+        "userId": 6,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 16
+      },
+      {
         "nombre": "Escritorio de madera",
         "descripcion": "Escritorio de madera en buen estado, con cajones y espacio para almacenamiento.",
         "tipo": "venta",
         "precio": 80,
-        "imagen": "https://example.com/escritoriomadera.jpg"
-    },        
-        {
+        "imagen": "https://ecorustico.com/wp-content/uploads/2017/01/ESCRITORIO-ECORUSTICO-CAJONES-ESTANTES.jpg",
+        "userId": 5,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 17
+      },
+      {
         "nombre": "Aspiradora Dyson",
         "descripcion": "Aspiradora Dyson en excelentes condiciones, con varios accesorios incluidos.",
         "tipo": "venta",
         "precio": 200,
-        "imagen": "https://example.com/aspiradoradyson.jpg"
-    },        
-        {
+        "imagen": "https://img.pccomponentes.com/articles/15/158768/j3.jpg",
+        "userId": 4,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 18
+      },
+      {
         "nombre": "Impresora HP",
         "descripcion": "Impresora HP en buen estado, con conexión WiFi y cartuchos de tinta incluidos.",
         "tipo": "venta",
         "precio": 50,
-        "imagen": "https://example.com/impresorahp.jpg"
-    },        
-        {
+        "imagen": "https://www.hp.com/es-es/shop/Html/Merch/Images/c06431421_1750x1285.jpg",
+        "userId": 1,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 19
+      },
+      {
         "nombre": "Guitarra eléctrica",
         "descripcion": "Guitarra eléctrica en buenas condiciones, con amplificador y funda incluidos.",
         "tipo": "compra",
-        "precio": 250
-    },        
-        {
+        "precio": 250,
+        "userId": 2,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 20
+      },
+      {
         "nombre": "Mochila de viaje",
         "descripcion": "Mochila de viaje en buen estado, con múltiples compartimentos y capacidad de 50 litros.",
         "tipo": "venta",
         "precio": 60,
-        "imagen": "https://example.com/mochilaviaje.jpg"
-    },        
-        {
-        "nombre": "Cámara GoPro HERO8",
-        "descripcion": "Cámara GoPro HERO8 en excelentes condiciones, incluye batería, tarjeta de memoria y varios accesorios.","tipo": "venta",
+        "imagen": "https://miequipajedemano.com/wp-content/uploads/2016/04/viajar-con-mochila.jpg",
+        "userId": 3,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 21
+      },
+      {
+        "nombre": "Cámara GoPro",
+        "descripcion": "Cámara GoPro en excelentes condiciones, incluye batería, tarjeta de memoria y varios accesorios.",
+        "tipo": "venta",
         "precio": 300,
-        "imagen": "https://example.com/goprohero8.jpg"
-    },
-{
+        "imagen": "https://topesdegama.com/app/uploads-topesdegama.com/2019/10/GoPro-HERO-8-Black-4.jpg",
+        "userId": 8,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 22
+      },
+      {
         "nombre": "Máquina de cortar pelo",
         "descripcion": "Máquina de cortar pelo en buen estado, con varios peines y accesorios incluidos.",
         "tipo": "venta",
         "precio": 30,
-        "imagen": "https://example.com/maquinacortarpelo.jpg"
-    },
-{
+        "imagen": "https://productospeluqueriabellezaaura.com.es/wp-content/uploads/2020/12/maquina-corta-cortar-pelo-dry-cut-1000-asuer-con-cepillos-base-sin-cable-pantalla-cabezal-ajustable-cuchillas-ceramica.jpg",
+        "userId": 7,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 23
+      },
+      {
         "nombre": "Bicicleta de montaña",
         "descripcion": "Bicicleta de montaña en buen estado, con cuadro de aluminio y suspensión delantera.",
-        "tipo": "venta",
-        "precio": 400,
-        "imagen": "https://example.com/bicimontana.jpg"
-    },
-{
+        "tipo": "compra",
+        "precio": 300,
+        "userId": 6,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 24
+      },
+      {
         "nombre": "Consola Xbox One",
-        "descripcion": "Consola Xbox One en buen estado, incluye dos controles y varios juegos.",
-        "tipo": "venta",
+        "descripcion": "Consola Xbox One que este en buen estado y que incluya dos controles.",
+        "tipo": "compra",
         "precio": 200,
-        "imagen": "https://example.com/xboxone.jpg"
-    },
-{
+        "userId": 5,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 25
+      },
+      {
         "nombre": "Libros de cocina",
         "descripcion": "Colección de libros de cocina en buen estado, con recetas de todo el mundo.",
         "tipo": "venta",
         "precio": 50,
-        "imagen": "https://example.com/libroscocina.jpg"
-    },
-{
+        "imagen": "https://ep01.epimg.net/elcomidista/imagenes/2017/04/07/articulo/1491579746_255353_1491582166_media_normal.jpg",
+        "userId": 4,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 26
+      },
+      {
         "nombre": "Reloj Casio",
         "descripcion": "Reloj Casio en buen estado, resistente al agua y con múltiples funciones.",
         "tipo": "compra",
-        "precio": 30
-    },
-{
+        "precio": 30,
+        "userId": 6,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 27
+      },
+      {
         "nombre": "Gafas de sol Ray-Ban",
         "descripcion": "Gafas de sol Ray-Ban en excelentes condiciones, con lentes polarizados y estuche incluido.",
         "tipo": "venta",
         "precio": 80,
-        "imagen": "https://example.com/gafasrayban.jpg"
-    },
-{
+        "imagen": "https://media.opticauniversitaria.es/media/catalog/product/cache/1/image/1000x550/9df78eab33525d08d6e5fb8d27136e95/0/r/0rb3548nl__001_000a.jpg",
+        "userId": 3,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 28
+      },
+      {
         "nombre": "Teclado Yamaha",
         "descripcion": "Teclado Yamaha en buen estado, con varios sonidos y efectos incluidos.",
         "tipo": "compra",
-        "precio": 150
-    },
-{
+        "precio": 150,
+        "userId": 8,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 29
+      },
+      {
         "nombre": "Horno de microondas",
         "descripcion": "Horno de microondas en buen estado, con varios programas y funciones incluidas.",
         "tipo": "compra",
-        "precio": 50
-    }
-]
+        "precio": 50,
+        "userId": 2,
+        "updatedAt": "2021-03-19T18:20:14.692Z",
+        "id": 30
+      },
+      {
+        "nombre": "Rascador para gatos",
+        "descripcion": "Rascador para gatos con poco uso",
+        "tipo": "compra",
+        "precio": "20",
+        "imagen": "",
+        "userId": 1,
+        "updatedAt": "2023-03-19T19:31:14.692Z",
+        "id": 31
+      },
+      {
+        "nombre": "Cama elastica",
+        "descripcion": "Cama elastica en buen estado. Poco uso.",
+        "tipo": "venta",
+        "precio": "50",
+        "imagen": "https://contents.mediadecathlon.com/p2254190/k$b6432c2fb00743221776def4824206c1/sq/trampolin-cama-elastica-cardio-fitness-domyos-trampo-100-cm-hasta-100-kg-negro.jpg?format=auto&f=800x0",
+        "userId": 2,
+        "updatedAt": "2023-03-19T21:40:23.126Z",
+        "id": 32
+      }
+    ]
+  }
