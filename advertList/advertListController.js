@@ -1,5 +1,5 @@
-import { getAdverts } from "./adverts.js";
-import { buildAdvertView, buildSpinnerView, buildErrorLoadingAdverts, buildEmptyAdvertList } from "./advertView.js";
+import { getAdverts } from "./advertsList.js";
+import { buildAdvertView, buildSpinnerView, buildErrorLoadingAdverts, buildEmptyAdvertList } from "./advertListView.js";
 
 export async function advertListController(advertListElement) {
     const spinnerView = buildSpinnerView();

@@ -4,16 +4,17 @@ export function buildAdvertView(advert) {
     
     if(advert.tipo === "venta") {
     newAdvertElement.innerHTML = `
-    <a href="/advert-detail.html?advertId=${advert.id}">
+    <a href="/advertDetail.html?advertId=${advert.id}">
     <p>${advert.nombre}</p>
     <p>${advert.descripcion}</p>
     <p>${advert.tipo}</p>
     <p>${advert.precio}</p>
     <p>${advert.imagen}</p>
     </a>
-    `; } else {
+    `; 
+  } else {
       newAdvertElement.innerHTML = `
-    <a href="/advert-detail.html?advertId=${advert.id}">
+    <a href="/advertDetail.html?advertId=${advert.id}">
     <p>${advert.nombre}</p>
     <p>${advert.descripcion}</p>
     <p>${advert.tipo}</p>
