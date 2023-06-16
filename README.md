@@ -11,7 +11,7 @@ Este proyecto es una plataforma web de anuncios de articulos de segunda mano.
 ## Instalación
 
 1. Clona el repositorio: `git clone https://github.com/ReyesMorales/webWallapopJS`
-2. Navega al directorio del proyecto: `cd frontendwallapop`
+2. Navega al directorio del proyecto: `frontendwallapop`
 3. Usando el repositorio de Sparrest copia el archivo db.json
 4. En el archivo index.js de Sparrest añade un segundo parametro en la linea 129, quedando así: 
     ` return res.status(201).json({ accessToken, userId: authenticatedUser.id })`
@@ -20,8 +20,8 @@ Este proyecto es una plataforma web de anuncios de articulos de segunda mano.
 
 ## Uso
 
-1. Abre un navegador web
-2. Visita `http://localhost:8000`
+1. Arranca el el api rest usando el comando `npm start`
+2. Desde el repositorio clonado, accede live-server `npx live-server`
 3. Inicia sesión o crea una cuenta
 
 
