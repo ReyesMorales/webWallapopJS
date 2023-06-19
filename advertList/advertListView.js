@@ -5,21 +5,21 @@ export function buildAdvertView(advert) {
     if(advert.tipo === "venta") {
     newAdvertElement.innerHTML = `
     <a href="/advertDetail.html?advertId=${advert.id}">
-    <p>${advert.nombre}</p>
+    <p>${advert.nombre}</p></a>
     <p>${advert.descripcion}</p>
     <p>${advert.tipo}</p>
     <p>${advert.precio}</p>
     <p>${advert.imagen}</p>
-    </a>
+   
     `; 
   } else {
       newAdvertElement.innerHTML = `
     <a href="/advertDetail.html?advertId=${advert.id}">
-    <p>${advert.nombre}</p>
+    <p>${advert.nombre}</p></a>
     <p>${advert.descripcion}</p>
     <p>${advert.tipo}</p>
     <p>${advert.precio}</p>
-    </a>
+    
     `;
     }
     
