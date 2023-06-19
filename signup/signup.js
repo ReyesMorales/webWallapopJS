@@ -1,6 +1,6 @@
 export async function createUser(email, password) {
   const user = {
-    username: email,
+    username: username,
     password: password
   }
 

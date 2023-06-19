@@ -1,6 +1,6 @@
 export async function loginUser(email, password) {
     const user = {
-      username: email,
+      username: username,
       password: password
     }
     const response = await fetch('http://localhost:8000/auth/login', {
