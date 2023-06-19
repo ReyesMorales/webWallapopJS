@@ -9,22 +9,17 @@ export const advertDetailController = async (advertDetailElement, advertId) => {
 
     const deleteBtn = document.querySelector(".delete-btn");
 
-    if (deleteBtn) {
-      deleteBtn.addEventListener("click", async () => {
-        const token = localStorage.getItem("token");
-        const userId = localStorage.getItem("userId");
-        if (!token || !userId) {
-          alert("Debe estar logeado para borrar un anuncio");
-          return;
-        }
-        if (advert.userId.toString() !== userId) {
-          alert("No está autorizado para borrar este anuncio");
-          return;
-        }
+    const token = localStorage.getItem("token");
+    const userId = localStorage.getItem("userId");
 
-        const confirmDelete = confirm(
-          "¿Está seguro que desea borrar el anuncio?"
-        );
+    if (!token || !userId) {
+      deleteBtn.style.display = "none"; 
+    } else if (advert.userId.toString() !== userId) {
+      deleteBtn.style.display = "none"; 
+    } else {
+      deleteBtn.addEventListener("click", async () => {
+        const confirmDelete = confirm("¿Está seguro que desea borrar el anuncio?");
+
 
         if (confirmDelete) {
           try {
