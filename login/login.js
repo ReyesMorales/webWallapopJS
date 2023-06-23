@@ -1,4 +1,4 @@
-export async function loginUser(email, password) {
+export async function loginUser(username, password) {
     const user = {
       username: username,
       password: password
