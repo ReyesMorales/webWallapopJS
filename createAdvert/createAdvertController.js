@@ -12,11 +12,19 @@ export const createAdvertController = async (createAdvertFormElement) => {
     }
 
     const formData = new FormData(createAdvertFormElement);
+    const advertPrice = formData.get('precio');
+
+    if (advertPrice <= 0) {
+      const topic = pubSub.TOPICS.SHOW_NOTIFICATION;
+      pubSub.publish(topic, 'El precio debe ser un número positivo');
+      return;
+    }
+
     const values = {
       advertName: formData.get('nombre'),
       advertDescription: formData.get('descripcion'),
       advertType: formData.get('tipo'),
-      advertPrice: formData.get('precio'),
+      advertPrice,
       advertImage: formData.get('imagen')
     };
 
